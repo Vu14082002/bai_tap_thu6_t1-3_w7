@@ -24,10 +24,15 @@ export const Layout01 = function () {
 
      return (
           <SafeAreaView style={styles.container}>
-               <Title goBackIconName="goback.png" title="Chat" cartIconName="cart.png" />
+               <Title
+                    goBackIconName="goback.png"
+                    title="Chat"
+                    cartIconName="cart.png"
+               />
                <View style={styles.groupBanner}>
                     <Text style={styles.lblBanner}>
-                         Bạn có thắc mắc với sản phẩm vừa xem đừng ngại chát với shop!
+                         Bạn có thắc mắc với sản phẩm vừa xem đừng ngại chát với
+                         shop!
                     </Text>
                </View>
                <FlatList
@@ -45,7 +50,6 @@ export const Layout01 = function () {
                     }}
                     keyExtractor={(item) => item.id.toString()}
                />
-               <Footer />
           </SafeAreaView>
      );
 };
